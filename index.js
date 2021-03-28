@@ -34,7 +34,6 @@ class Battlemetrics {
                 construct.params = data;
             this.axios(construct)
             .then(function (response) {
-                console.log(response);
                 if (response && response.data)
                     return resolve(response.data);
                 reject(response);
